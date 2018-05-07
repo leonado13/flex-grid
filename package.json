@@ -1,0 +1,25 @@
+{
+  "name": "flex-grid",
+  "version": "1.0.0",
+  "description": "Mini grid library use flex css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp",
+    "watch": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonado13/flex-grid.git"
+  },
+  "keywords": [
+    "grid",
+    "flex",
+    "css"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
