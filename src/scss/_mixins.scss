@@ -2,4 +2,15 @@
     .flex-grid {
         display: flex;
     }
+
+    .flex-grid--vertical {
+        flex-direction: column;
+    }
+
+    .flex-grid--reverse {
+        flex-direction: row-reverse;
+        &.flex-grid--vertical {
+            flex-direction: column-reverse;
+        }
+    }
 }

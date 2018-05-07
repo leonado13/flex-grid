@@ -1,12 +1,17 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const autoprefixer = require('gulp-autoprefixer');
+const minifyCSS = require('gulp-csso');
 
-var sourceFiles = 'src/scss/*.scss';
+const scssFiles = 'src/scss/*.scss';
+const cssFile = 'dist';
 
 gulp.task('css', function() {
-    return gulp.src(sourceFiles)
+    return gulp.src(scssFiles)
         .pipe(sass())
-        .pipe(gulp.dest('dist'));
+        .pipe(autoprefixer())
+        .pipe(minifyCSS())
+        .pipe(gulp.dest(cssFile));
 });
 
 gulp.task('watch', function () {
